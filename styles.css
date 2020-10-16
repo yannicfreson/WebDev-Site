@@ -1,21 +1,49 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #123456;
+  color: #16284a;
 }
 
 h1 {
   font-weight: 100;
-  font-size: 4rem;
+  font-size: 8vw;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 1rem;
 }
 
 h2, h3 {
   font-weight: 100;
   font-size: 2rem;
-  color: #36e38f;
+  color: #5dfc71;
 }
 
-nav {
-  color: #888;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #16284a;
+}
+
+ul li {
+  color: #5dfc71;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #5dfc71;
+  text-align: center;
+  padding: 1rem 1rem;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #5dfc71;
+}
+
+a:hover {
+  color: #aaa;
 }
 
 p {
@@ -25,5 +53,3 @@ p {
 q {
   font-style: italic;
 }
-
-img {}
