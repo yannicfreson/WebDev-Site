@@ -151,9 +151,19 @@ li.active > a {
 }
 
 ul#tours li {
-  list-style-image: url("res/walkingManTransparentBlack16px.png");
+  list-style-type: none;
   margin-bottom: 1rem;
   margin-left: 2rem;
+}
+
+ul#tours li::before {
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  background-size: 1rem 1rem;
+  background-image: url("res/walkingMan.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 420px) {
@@ -169,9 +179,15 @@ ul#tours li {
 
 @media (min-width: 768px) {
   nav a::before {
-    content: url("res/walkingManTransparent16px.png");
+    content: "";
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    background-size: 1rem 1rem;
+    background-image: url("res/walkingManWhite.svg");
+    background-repeat: no-repeat;
   }
   nav li.active a::before {
-    content: url("res/walkingManTransparentBlack16px.png");
+    background-image: url("res/walkingMan.svg");
   }
 }
