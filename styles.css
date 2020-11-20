@@ -32,10 +32,24 @@ body {
   margin: auto;
 }
 
-.logo {
+.logo .mini {
   display: block;
+  width: 5rem;
   height: 5rem;
-  margin: auto;
+  margin: -0.5rem auto 0.5rem;
+}
+
+.logo .small,
+.logo .large {
+  display: none;
+}
+
+.banner {
+  max-width: 72rem;
+  width: 100%;
+  height: 5rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 
 h1 {
@@ -172,12 +186,40 @@ ul#tours li::before {
     line-height: normal;
   }
 
+  .logo .small {
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    margin: -0.5rem auto 0.5rem;
+  }
+
+  .logo .mini,
+  .logo .large {
+    display: none;
+  }
+
   nav > ul {
     flex-direction: row;
+  }
+
+  .banner {
+    height: 7.5rem;
   }
 }
 
 @media (min-width: 768px) {
+  .logo .large {
+    display: block;
+    width: 15rem;
+    height: 15rem;
+    margin: -0.5rem auto 0.5rem;
+  }
+
+  .logo .mini,
+  .logo .small {
+    display: none;
+  }
+
   nav a::before {
     content: "";
     display: inline-block;
@@ -189,5 +231,9 @@ ul#tours li::before {
   }
   nav li.active a::before {
     background-image: url("res/walkingMan.svg");
+  }
+
+  .banner {
+    height: 10rem;
   }
 }
