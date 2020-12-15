@@ -39,8 +39,7 @@ body {
   margin: -0.5rem auto 0.5rem;
 }
 
-.logo .small,
-.logo .large {
+.logo .small, .logo .large {
   display: none;
 }
 
@@ -60,8 +59,7 @@ h1 {
   margin-bottom: 1rem;
 }
 
-h2,
-h3 {
+h2, h3, div q {
   font-weight: 100;
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -90,7 +88,7 @@ nav {
   margin-bottom: 2rem;
 }
 
-nav > ul {
+nav>ul {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -100,7 +98,7 @@ nav > ul {
   background-color: #33332a;
 }
 
-nav > ul li {
+nav>ul li {
   flex-grow: 1;
 }
 
@@ -120,7 +118,7 @@ a:hover {
   color: #eeeeee;
 }
 
-li.active > a {
+li.active>a {
   background-color: #eeeeee;
   color: #33332a;
 }
@@ -166,27 +164,21 @@ ul.tripList li::before {
     font-size: 1rem;
     line-height: normal;
   }
-
   .logo .small {
     display: block;
     width: 10rem;
     height: 10rem;
     margin: -0.5rem auto 0.5rem;
   }
-
-  .logo .mini,
-  .logo .large {
+  .logo .mini, .logo .large {
     display: none;
   }
-
-  nav > ul {
+  nav>ul {
     flex-direction: row;
   }
-
   .banner {
     height: 7.5rem;
   }
-
   .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -244,12 +236,9 @@ ul.tripList li::before {
     height: 15rem;
     margin: -0.5rem auto 0.5rem;
   }
-
-  .logo .mini,
-  .logo .small {
+  .logo .mini, .logo .small {
     display: none;
   }
-
   nav a::before {
     content: "";
     display: inline-block;
@@ -262,9 +251,12 @@ ul.tripList li::before {
   nav li.active a::before {
     background-image: url("res/walkingMan.svg");
   }
-
   .banner {
     height: 10rem;
+  }
+  .testimonialsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -274,7 +266,6 @@ ul.tripList li::before {
     height: unset;
     object-fit: contain;
   }
-
   .trips {
     display: grid;
     grid-template-columns: 1fr 1fr;
