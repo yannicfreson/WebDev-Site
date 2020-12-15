@@ -14,32 +14,28 @@ title color     #929456
   margin: 0;
   padding: 0;
 }
-
 html {
   box-sizing: border-box;
 }
-
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.2rem;
   line-height: 1.6;
   color: #33332a;
 }
-
 .container {
   padding: 1rem;
   max-width: 90rem;
   margin: auto;
 }
-
 .logo .mini {
   display: block;
   width: 5rem;
   height: 5rem;
   margin: -0.5rem auto 0.5rem;
 }
-
-.logo .small, .logo .large {
+.logo .small,
+.logo .large {
   display: none;
 }
 
@@ -48,9 +44,11 @@ body {
   width: 100%;
   height: 5rem;
   object-fit: cover;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
-
+.testimonialsContainer img {
+  display: none;
+}
 h1 {
   font-weight: 100;
   font-size: 5rem;
@@ -58,37 +56,41 @@ h1 {
   margin: 0px;
   margin-bottom: 1rem;
 }
-
-h2, h3, div q {
+h2,
+h3,
+div q {
   font-weight: 100;
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   color: #929456;
 }
-
 p {
   margin-bottom: 1.5rem;
 }
-
 p:last-of-type {
   margin-bottom: 2rem;
 }
-
+.testimonial p {
+  margin-bottom: 5rem;
+}
+.heading {
+  font-size: 1.5rem;
+}
+.uitstappenInleiding {
+  margin-top: -2rem;
+}
 .gallery_img {
   width: 100%;
   height: 100%;
 }
-
 .trips img {
   width: 100%;
   height: 100%;
 }
-
 nav {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
-
-nav>ul {
+nav > ul {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -97,11 +99,9 @@ nav>ul {
   padding: 0;
   background-color: #33332a;
 }
-
-nav>ul li {
+nav > ul li {
   flex-grow: 1;
 }
-
 li a {
   display: block;
   color: #d5c389;
@@ -109,26 +109,21 @@ li a {
   padding: 1rem 1rem;
   text-decoration: none;
 }
-
 a:visited {
   color: #d5c389;
 }
-
 a:hover {
   color: #eeeeee;
 }
-
-li.active>a {
+li.active > a {
   background-color: #eeeeee;
   color: #33332a;
 }
-
 ul.tours li {
   list-style-type: none;
   margin-bottom: 1rem;
   margin-left: 2rem;
 }
-
 ul.tours li::before {
   content: "";
   display: inline-block;
@@ -138,17 +133,14 @@ ul.tours li::before {
   background-image: url("res/walkingMan.svg");
   background-repeat: no-repeat;
 }
-
 .trips div {
   margin-bottom: 2rem;
 }
-
 ul.tripList li {
   list-style-type: none;
   margin-bottom: 1rem;
   margin-left: 2rem;
 }
-
 ul.tripList li::before {
   content: "";
   display: inline-block;
@@ -170,10 +162,11 @@ ul.tripList li::before {
     height: 10rem;
     margin: -0.5rem auto 0.5rem;
   }
-  .logo .mini, .logo .large {
+  .logo .mini,
+  .logo .large {
     display: none;
   }
-  nav>ul {
+  nav > ul {
     flex-direction: row;
   }
   .banner {
@@ -184,7 +177,7 @@ ul.tripList li::before {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
   }
   .gallery_img {
     height: 100%;
@@ -236,7 +229,8 @@ ul.tripList li::before {
     height: 15rem;
     margin: -0.5rem auto 0.5rem;
   }
-  .logo .mini, .logo .small {
+  .logo .mini,
+  .logo .small {
     display: none;
   }
   nav a::before {
@@ -257,6 +251,14 @@ ul.tripList li::before {
   .testimonialsContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+  .testimonialsContainer img {
+    display: unset;
+    max-width: 90rem;
+    width: 100%;
+    max-height: 10rem;
+    object-fit: cover;
   }
 }
 
@@ -271,6 +273,5 @@ ul.tripList li::before {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 2rem;
-    /* margin-bottom: 0rem; */
   }
 }
