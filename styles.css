@@ -152,10 +152,6 @@ ul.tripList li::before {
 }
 
 @media (min-width: 420px) {
-  body {
-    font-size: 1rem;
-    line-height: normal;
-  }
   .logo .small {
     display: block;
     width: 10rem;
@@ -223,6 +219,10 @@ ul.tripList li::before {
 }
 
 @media (min-width: 768px) {
+  body {
+    font-size: 1rem;
+    line-height: normal;
+  }
   .logo .large {
     display: block;
     width: 15rem;
@@ -255,9 +255,8 @@ ul.tripList li::before {
   }
   .testimonialsContainer img {
     display: unset;
-    max-width: 90rem;
     width: 100%;
-    max-height: 10rem;
+    max-height: 20rem;
     object-fit: cover;
   }
 }
@@ -273,5 +272,14 @@ ul.tripList li::before {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 2rem;
+  }
+  .testimonialsContainer img {
+    max-height: 10rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .testimonialsContainer img {
+    max-height: 7rem;
   }
 }
