@@ -2,11 +2,12 @@
 
 COLORS:
 
-main font       #33332A
-nav background  #33332A
-light font      #D5C389
-light text      #EEEEEE
-title color     #929456 
+main font         #33332A
+nav background    #33332A
+light background  #EEEEEE
+light font        #D5C389
+light text        #EEEEEE
+title color       #929456 
 
 */
 
@@ -30,8 +31,8 @@ body {
 }
 .logo .mini {
   display: block;
-  width: 5rem;
-  height: 5rem;
+  width: 7rem;
+  height: 7rem;
   margin: -0.5rem auto 0.5rem;
 }
 .logo .small,
@@ -151,6 +152,39 @@ ul.tripList li::before {
   background-repeat: no-repeat;
 }
 
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.contactFormContainer {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 2rem;
+}
+
 @media (min-width: 420px) {
   .logo .small {
     display: block;
@@ -162,9 +196,6 @@ ul.tripList li::before {
   .logo .large {
     display: none;
   }
-  nav > ul {
-    flex-direction: row;
-  }
   .banner {
     height: 7.5rem;
   }
@@ -172,7 +203,7 @@ ul.tripList li::before {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 0.5rem;
+    gap: 0.5rem;
     margin-bottom: 5rem;
   }
   .gallery_img {
@@ -218,6 +249,12 @@ ul.tripList li::before {
   }
 }
 
+@media (min-width: 530px) {
+  nav > ul {
+    flex-direction: row;
+  }
+}
+
 @media (min-width: 768px) {
   body {
     font-size: 1rem;
@@ -251,7 +288,7 @@ ul.tripList li::before {
   .testimonialsContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+    gap: 2rem;
   }
   .testimonialsContainer img {
     display: unset;
@@ -271,10 +308,15 @@ ul.tripList li::before {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 2rem;
+    gap: 2rem;
   }
   .testimonialsContainer img {
     max-height: 10rem;
+  }
+  .contactContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
   }
 }
 
